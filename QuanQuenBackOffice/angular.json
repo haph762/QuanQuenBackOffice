@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "QuanQuenBackOffice:build:production"
+              "buildTarget": "QuanQuenBackOffice:build:production"
             },
             "development": {
-              "browserTarget": "QuanQuenBackOffice:build:development"
+              "buildTarget": "QuanQuenBackOffice:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "QuanQuenBackOffice:build"
+            "buildTarget": "QuanQuenBackOffice:build"
           }
         },
         "test": {
