@@ -1,0 +1,285 @@
+<div class="container" #container>
+    <div class="head">
+        <i class='nav-icon bx bx-menu' (click)="activeClickMenu()"></i>
+        <p class="text-head">
+            QuanQuen<br/>DMS
+        </p>
+    </div>
+    <div class="mid">
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class='nav-icon bx bx-map-alt bx-rotate-180' ></i>
+                <p class="text-mid">Address</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>States</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Teritories</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Zones</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class='nav-icon bx bx-link bx-rotate-180' ></i>
+                <p class="text-mid">Affiliate</p>
+            </div>
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Referrals</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Transactions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class='nav-icon bx bxs-leaf' ></i>
+                <p class="text-mid">CSR</p>
+            </div>
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Banners</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>DrivenHtmlPages</p>
+                </div>
+                
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>LoyalCustomers</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>NotiCusDevices</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Referrals</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Transactions</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Referrals</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Transactions</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class='nav-icon bx bxs-user-account' ></i>
+                <p class="text-mid">Customer</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Customers</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>StoreCustomers</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">front_hand</i>
+                <p class="text-mid">Interaction</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Conments</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ConmentFoods</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Favotites</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Feedbacks</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Reviews</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>UserShares</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class='nav-icon bx bx-receipt'></i>
+                <p class="text-mid">Order</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ReasonCancellations</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Reservations</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ReservationCancels</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ReConfirmRequest</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">qr_code</i>
+                <p class="text-mid">QRCode</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>IdentityQRCodes</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>QRCodeRequests</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>QRCodeSignatures</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)" (click)="navigateTo('reward')">
+            <div class="nav-title">
+                <i class='nav-icon bx bx-gift'></i>
+                <p class="text-mid">Rewards</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>CusPromotions</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ExChangePoints</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Promotions</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>ProConditions</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)" (click)="navigateTo('store')">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">store</i>
+                <p class="text-mid">Store</p>
+            </div>
+
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Stores</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>StoreTypes</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>MediaFoods</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>FilterStores</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>SearchSuggest</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>SharedStores</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Level</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">person</i>
+                <p class="text-mid">Vsirius</p>
+            </div>
+            <div class="sub-nav" #subnav>
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>Stores</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>StoreTypes</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>MediaFoods</p>
+                </div>
+
+                <div class="sub-nav-item" (click)="activeClickSubNav($event)">
+                    <p>FilterStores</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">settings</i>
+                <p class="text-foot">Settings</p>
+            </div>
+        </div>
+        <div class="nav-item" (click)="activeClickNav($event)">
+            <div class="nav-title">
+                <i class="nav-icon material-icons">logout</i>
+                <p class="text-foot">Logout</p>
+            </div>
+        </div>
+    </div>
+</div>

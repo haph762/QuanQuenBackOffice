@@ -1,0 +1,105 @@
+p, i {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;  
+    -ms-user-select: none;
+  }
+
+  .header-row {
+    text-align: left;
+    min-height: 200px;
+    font-size: 0.9vw;
+    color: #2e3c51;
+   
+  }
+   
+  .header-cell, .text-index {
+    font-weight: 600;
+  }
+
+  .header-cell{
+    max-width: 25%;
+    padding: 2vh 1vh 2vh 1.5vh;
+    border-bottom: 2px solid #f1f6f9;
+  }
+   
+  .body-cell {
+    max-width: 25%;
+    border-bottom: 2px solid #f1f6f9;
+    border-top: 2px solid #f1f6f9;
+    padding: 1.5vh 0 1.5vh 1.5vh;
+  }
+
+
+  .body-row {
+    box-shadow: 0 1px 1px -1px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.4s ease; 
+  } 
+  
+  .body-row:hover {
+    box-shadow: 0 10px 10px -3px rgba(116, 206, 212, 0.5);
+    border-left: 0.5vh solid teal;
+  }
+
+  .icon-action {
+    font-size: 3vh;
+    color: #2e3c51;
+  }
+
+.action-cell {
+  padding: 1.5vh 0 1.5vh 1.5vh;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.tooltip-icon {
+  position: relative; 
+  width: 100%;
+}
+
+.tooltip-icon .tooltip-text {
+  visibility: hidden; 
+  background-color: #555; 
+  color: #fff; 
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px; 
+  position: absolute; 
+  z-index: 1; 
+  bottom: 125%;
+  left: 50%; 
+  margin-left: -50px;
+  opacity: 0; 
+  transition: opacity 0.1s ease-in;
+}
+
+.tooltip-icon:hover .tooltip-text {
+  visibility: visible; 
+  opacity: 1; 
+}
+
+
+.container-button-table {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 2vh;
+  button {
+    width: 6vw;
+    height: 4vh;
+    margin-left: 2vh;
+    border: 2px ;
+    background-color: #6362fd;
+    color: white;
+    border-radius: 2px;
+    font-size: 0.9vw;
+  }
+  button:hover {
+    opacity: 0.9;
+  }
+}

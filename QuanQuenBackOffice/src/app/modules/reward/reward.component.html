@@ -1,0 +1,61 @@
+
+<div class="head-section" id="headerbar">
+    <div class="search">
+        <p>Store</p>
+        <i class='bx bx-search'></i>
+        <input placeholder="Quick Search ..." type="text">
+    </div>
+    <div class="filter-section">
+        <div class="create">
+            <i class='bx bx-plus' ></i>
+            <p>Create Order</p>
+        </div>
+        <div class="sort">
+            <p>Sort By :</p>
+            <select>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+        </div>
+        <i class='icon-filter bx bx-filter-alt' (click)="clickIconFilter($event)"></i>
+        <div>
+            <i class='icon-grid bx bx-menu btn-active' #iconformdisplay (click)="clickIconFormDisplay($event)"></i>
+            <i class='icon-grid bx bxs-grid-alt' #iconformdisplay (click)="clickIconFormDisplay($event)"></i>
+        </div>
+    </div>
+</div>
+<div class="noncontainerheader">
+<div class="filter-table" #filtertable>
+    <section class="Checbox-section">
+        <mat-checkbox class="check-box">Check me!</mat-checkbox>
+
+        <mat-checkbox class="check-box">Check me!</mat-checkbox>
+
+        <mat-checkbox class="check-box">Check me!</mat-checkbox>
+    </section>
+    <div class="sort">
+        <p>Sort By :</p>
+        <select>
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select>
+    </div>
+</div>
+<div class="navigation">
+    <ul>
+        <li class="item-nav-header" #navbaritem 
+        (click)="clickItemNavbar($event)"
+        *ngFor="let item of listNav; let i = index"
+        [class.btn-nav-active]="i === 0"
+        >
+            <p >{{item}}</p>
+        </li>
+    </ul>
+</div>
+<div class="body-section">
+    <app-data-table [parentData]="listStore" [parentField]="listField"></app-data-table>
+</div>
+</div>
+
